@@ -20,13 +20,15 @@ public class PlayerController : MonoBehaviour
 
     public Vector3 posicionInicial;
 
+    public CherryCollector cherryCollector;
+
     [Header("Movimiento Personaje")]
         float horizontal;
     public float fuerzaHorizontal;
     public float fuerzaVertical;  
         Rigidbody2D rigidbody2D;
-        
-
+    
+    
     [Header("Control Rayo")]
     public float altruaRayo;   
     public LayerMask piso;    
@@ -95,7 +97,7 @@ public class PlayerController : MonoBehaviour
             vidaActual= 100;
             transform.position= posicionInicial;
             textoVidaPlayer.text= "Vida:"+ vidaActual.ToString();  
-            
+            cherryCollector.ResetCollectedCherries();
         }
         
     }
