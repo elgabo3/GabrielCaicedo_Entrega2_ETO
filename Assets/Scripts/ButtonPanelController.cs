@@ -23,6 +23,6 @@ public class ButtonPanelController : MonoBehaviour
         buttonPanel.SetActive(isPanelVisible);
         
         // Cambia el texto del botón de alternancia para reflejar el estado actual
-        toggleButton.GetComponentInChildren<Text>().text = isPanelVisible ? "Ocultar" : "Mostrar";
+        //toggleButton.GetComponentInChildren<Text>().text = isPanelVisible ? "Ocultar" : "Mostrar";
     }
 }

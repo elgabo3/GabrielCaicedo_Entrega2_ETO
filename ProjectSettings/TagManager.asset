@@ -8,6 +8,7 @@ TagManager:
   - SubirVida
   - cherry
   - lava
+  - Box
   layers:
   - Default
   - TransparentFX
